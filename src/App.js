@@ -13,6 +13,7 @@ import ScheduleAppt from "./Pages/ScheduleAppt";
 import AboutUs from "./Pages/AboutUs";
 import Testimonial from "./Pages/Testimonial";
 import Contact from "./Pages/Contact";
+import SignupLogin from "./Pages/SignupLogin";
 
 // function App() {
 //     return (
@@ -20,9 +21,10 @@ import Contact from "./Pages/Contact";
 //             <Sidebar />
 //             <Routes>
 //                 <Route path="/" element={ <Home /> } />
-//                 <Route path="schedule" element={<ScheduleAppt /> } />
-//                 <Route path="about" element={<AboutUs />} />
-//                 <Route path="testimonial" element={<Testimonial />} />
+//                 <Route path="signin" element={ <SignupLogin /> } />
+//                 <Route path="schedule" element={ <ScheduleAppt /> } />
+//                 <Route path="about" element={ <AboutUs />} />
+//                 <Route path="testimonial" element={ <Testimonial />} />
 //                 <Route path="contact" element={ <Contact />} />
 //             </Routes>
 
@@ -42,6 +44,11 @@ function App() {
                             exact
                             path="/"
                             element={<Home />}
+                        />
+                        {/*This route is for the 'Sign in' component -> path is /signin*/}
+                        <Route
+                            path="/signin"
+                            element={<SignupLogin />}
                         />
                         {/*This route is for the 'Schedule' component -> path is /schedule*/}
                         <Route

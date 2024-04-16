@@ -2,6 +2,10 @@ import React from 'react'
 
 export const SidebarData = [
     {
+        title: "Sign in",
+        link: "/signin"
+    },
+    {
         title: "Schedule an Appointment",
         link: "/schedule"
     },
