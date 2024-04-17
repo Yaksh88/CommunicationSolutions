@@ -36,39 +36,38 @@ import SignupLogin from "./Pages/SignupLogin";
 function App() {
     return (
         <div className="App">
-            <Sidebar />
             <Router>
                 <Routes>
                     {/* This route is for 'Home' component -> path is '/' */}
                         <Route
                             exact
                             path="/"
-                            element={<Home />}
+                            element={<><Sidebar /><Home /></>}
                         />
+
                         {/*This route is for the 'Sign in' component -> path is /signin*/}
-                        <Route
-                            path="/signin"
-                            element={<SignupLogin />}
-                        />
+                        {/* This page deos not contain sidebar */}
+                        <Route path="/signin" element={<SignupLogin />}/>
+
                         {/*This route is for the 'Schedule' component -> path is /schedule*/}
                         <Route
                             path="/schedule"
-                            element={<ScheduleAppt />}
+                            element={<><Sidebar /><ScheduleAppt /></>}
                         />
                         {/*This route is for the 'About' component -> path is /about*/}
                         <Route
                             path="/about"
-                            element={<AboutUs />}
+                            element={<><Sidebar /><AboutUs /></>}
                         />
                         {/*This route is for the 'Testimonial' component -> path is /testimonial*/}
                         <Route
                             path="/testimonial"
-                            element={<Testimonial />}
+                            element={<><Sidebar /><Testimonial /></>}
                         />
                         {/*This route is for the 'Contact' component -> path is /contact*/}
                         <Route
                             path="/contact"
-                            element={<Contact />}
+                            element={<><Sidebar /><Contact /></>}
                         />
                         {/*This route is for any mismatch -> defaults to '/'*/}
                         <Route
