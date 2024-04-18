@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css'; 
+import '../styles/footer.css'; 
 import fb from '../assets/facebook.png';
 import linkedin from '../assets/linkedin.png';
 import yelp from '../assets/yelp.png';
