@@ -1,8 +1,8 @@
-
 body {
     --color-background: #ffffff;
-    --color-primary: #89bcf7;
-    --color-primary-dark: #4778af;
+    --color-primary: #9facbb;
+    --color-border: #4b98f0;
+    --color-primary-dark: #5e666e;
     --color-error: #fd1717;
     --color-success: #0ce21d;
     --border-radius: 4px;
@@ -16,10 +16,16 @@ body {
     background: var(--color-background);
 }
 
+/* Hide sign up page */
+.form__hidden {
+    display: none;
+}
+
 /* Set size and location of the container*/
 .login__container {
     flex-direction: column;
     width: 400px;
+    height: 450px;
     max-width: 400;
     margin: auto;
     margin-bottom: 150px;
@@ -29,21 +35,19 @@ body {
     background: #ebe9e9af;
 }
 
+/* Seeting for Sign in text */
 .header {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 9px;
     width: 100%;
     margin-top: 30px;
-    font-size: 40px;
+    margin-bottom: 50px;
+    font-size: 37px;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-.text {
-    font-size: 40px;
-}
-
-/* Suppose to elimitate the gap on top and bottom */
+/* Elimitate the gap on top and bottom */
 .form > *:first-child {
     margin-top: 0;
 }
@@ -65,8 +69,6 @@ body {
     color: var(--color-error);
 }
 
-
-
 /* Make space between boxes */
 .forom__input-group {
     margin-bottom: 1rem;
@@ -87,7 +89,7 @@ body {
 
 /* Set color when column box is clicked */
 .form__input:focus {
-    border-color: var(--color-primary);
+    border-color: var(--color-border);
     background: #ffffff;
 }
 
@@ -120,3 +122,36 @@ body {
 .form__button:active {
     transform: scale(0.98);
 }
+
+.form__text__forgot {
+    margin-top: 0.3rem;
+}
+
+.form__text__login {
+    margin-top: 5.5rem;
+}
+
+.form__text__createAcc {
+    margin-top: 10rem;
+}
+
+/* Forgot password text setting */
+.forgot-password {
+    color:#4797e7;
+    font-size: 13px;
+}
+
+/* Setting for create account and log in button */
+.form__link {
+    color:#2486e9;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+.form__link:hover {
+  
+    border-radius: 20px;
+    background:#e1e4e9;
+}
+

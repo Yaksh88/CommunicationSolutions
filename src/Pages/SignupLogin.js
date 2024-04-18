@@ -1,34 +1,76 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './SignupLogin.css';
 
-function SignupLogin(){
+function SignupLogin() {
+    // State to track which form to show, true for login and false for create account
+    const [showLoginForm, setShowLoginForm] = useState(true);
+
     return (
         <div className="login__container">
-            <form class="form" id="login">
-                <h1 className="header">Sign in</h1>
-                
-                <div className="form__message form__message-error">{/*Incorrect username/password combination.*/}</div>
-                {/* Create sign in column*/}
-                <div className="form__input-group">
-                    <input type="text" className="form__input" autoFocus placeholder="Enter your email"></input>
-                    <div className="form__input-error-message">{/*This is an error message*/}</div>
-                </div>
-
-                {/* Create password column */}
-                <div className="form__input-group">
-                    <input type="password" className="form__input" placeholder="Password"/>
-                    <div class="form__input-error-message"></div>
-                </div>
-                <button className="form__button" type="submit">Continue</button>    
-
-                {/* External link for creating and reseting password */}
-                <p className="form__text">
-                    <a href="#" className="forgot-password">Forgot password?</a>
-                </p>
-                <p className="form__text">
-                    <a className="form__link" href="#" id="linkCreateAccount">Don't have an account? Create account</a>
-                </p>
-            </form>
+            {showLoginForm ? (
+                // Log in to existing account
+                <form className="form" id="login">
+                    <h1 className="header">Sign in</h1>
+                    {/* Create sign in column */}
+                    <div className="form__input-group">
+                        <input type="text" className="form__input" autoFocus placeholder="Enter your email" />
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    {/* Create password column */}
+                    <div className="form__input-group">
+                        <input type="password" className="form__input" placeholder="Password"/>
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    <button className="form__button" type="submit">Continue</button>    
+                    <p className="form__text__forgot">
+                        <a href="#" className="forgot-password">Forgot password?</a>
+                    </p>
+                    <p className="form__text__createAcc">
+                        <button 
+                            type="button"
+                            className="form__link" 
+                            onClick={() => setShowLoginForm(false)} // Switch to create account form
+                        >
+                            Create account
+                        </button>
+                    </p>
+                </form>
+            ) : (
+                // Create new account
+                <form className="form" id="createAccount">
+                    <h1 className="header">Create Account</h1>
+                    {/* Create username column */}
+                    <div className="form__input-group">
+                        <input type="text" className="form__input" autoFocus placeholder="Username" />
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    {/* Create email column */}
+                    <div className="form__input-group">
+                        <input type="email" className="form__input" placeholder="Email" />
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    {/* Create password column */}
+                    <div className="form__input-group">
+                        <input type="password" className="form__input" placeholder="Password"/>
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    {/* Confirm password column */}
+                    <div className="form__input-group">
+                        <input type="password" className="form__input" placeholder="Confirm Password"/>
+                        <div className="form__input-error-message"></div>
+                    </div>
+                    <button className="form__button" type="submit">Continue</button>    
+                    <p className="form__text__login">Already have an account?
+                        <button 
+                            type="button"
+                            className="form__link" 
+                            onClick={() => setShowLoginForm(true)} // Switch to login form
+                        >
+                            Log in
+                        </button>
+                    </p>
+                </form>
+            )}
         </div>
     );
 }
