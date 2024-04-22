@@ -8,8 +8,8 @@ function ServiceTwo() {
             <div className="gapspace">
             </div>
             <div className="service_two">
-                <h4>Business Consulting</h4>
-                <p>Business  Counseling That Are Geared</p>
+                <h4>Business Coaching</h4>
+                <p>Business  Coaching That Are Geared</p>
                 <p>Towards Their Clients Best Interest</p>
             </div>
             <div class="vLine"></div>

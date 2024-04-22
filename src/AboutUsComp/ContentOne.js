@@ -10,7 +10,7 @@ function ServiceOne() {
             </div>
             <div class="vLine"></div>
             <div className="service_one">
-                <h4>Online Reputation</h4>
+                <h4>Yelp Campaign</h4>
                 <p>Management Of Promotional Outlets</p>
                 <p> Such As Yelp, Facebook, and Etc</p>
             </div>
