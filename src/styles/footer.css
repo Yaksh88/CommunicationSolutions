@@ -1,6 +1,6 @@
 /* For Footer */
 .section__padding{
-    padding: 20px;
+    padding: 4rem 4rem;
 }
 
 .footer{
@@ -44,12 +44,8 @@ a{
 }
 
 .socialmedia img{
-<<<<<<<< HEAD:src/PagesCSS/Footer.css
-    width: 100%;
-========
     width: 50px;
     filter: brightness(0) invert(1);
->>>>>>>> afa924117f73829850449108b86e51eb422cfb36:src/styles/footer.css
 }
 
 .sb__footer-links_div h4{
