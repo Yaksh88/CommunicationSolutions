@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/footer.css'; 
+import '../App.css'; 
 
 function Footer(){
     return (
@@ -24,14 +24,14 @@ function Footer(){
                             <p>Online Reputation Management</p>
                         </a>
                         <a href="/buisnessconsulting">
-                            <p>Buisness Consulting</p>
+                            <p>Business Consulting</p>
                         </a>
                         <a href="/communicationoptimization">
                             <p>Communication Optimization</p>
                         </a>
                     </div>
                     <div className="sb__footer-links_div">
-                    <h4>Contact</h4>
+                        <h4>Contact</h4>
                         <a href="/email">
                             <p>Email</p>
                         </a>
@@ -41,25 +41,22 @@ function Footer(){
                     </div>
                 </div>
 
-            <hr></hr>
+                <hr />
 
-            <div className="sb__footer-below">
-                <div className="sb__footer-copyright">
-                    <p>
-                        @{new Date().getFullYear()} CodeInn. All right reserved.
-                     </p>
+                <div className="sb__footer-below">
+                    <div className="sb__footer-copyright">
+                        <p>@{new Date().getFullYear()} CodeInn. All right reserved.</p>
+                    </div>
+                    <div className="sb__footer-below-links">
+                        <a href="/terms"><div><p>Terms & Conditions</p></div></a>
+                        <a href="/privacy"><div><p>Privacy</p></div></a>
+                        <a href="/security"><div><p>Security</p></div></a>
+                        <a href="/cookie"><div><p>Cookie Declaration</p></div></a>
+                    </div>
                 </div>
-                <div className="sb__footer-below-links">
-                    <a href="/terms"><div><p>Terms & Conditions</p></div></a>
-                    <a href="/privacy"><div><p>Privacy</p></div></a>
-                    <a href="/security"><div><p>Security</p></div></a>
-                    <a href="/cookie"><div><p>Cookie Declaration</p></div></a>
-                </div>
-            </div>
-
             </div>
         </div>
-    )
+    );
 }
 
 export default Footer;
