@@ -2,9 +2,15 @@ import React from 'react';
 import '../App.css';
 import { SidebarData } from './SidebarData';
 
+    
 function Sidebar() {
     return (
         <div className="Sidebar">
+            <div className='toggle-btn'>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul className="SidebarList">
                 {SidebarData.map((val, key) => {
                     return (
@@ -27,5 +33,10 @@ function Sidebar() {
         </div>
     );
 }
+
+// function show(){
+//     const element = ".Sidebar";
+//     element.classList.toggle("active");
+// }
 
 export default Sidebar

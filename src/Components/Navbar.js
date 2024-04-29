@@ -10,9 +10,9 @@ function Navbar() {
                 <div className='title'>
                     <h4>Communication Solutions</h4>
                 </div>
-                <div className='sample'>
+                {/* <div className='sample'>
                     <button class="button">Schedule Appointment</button>
-                </div>
+                </div> */}
             </div>
         </>
     )

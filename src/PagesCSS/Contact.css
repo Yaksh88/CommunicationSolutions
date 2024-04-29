@@ -1,5 +1,5 @@
 .contact_container {
-    background-color: white;
+    /* background-color: black; */
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -7,6 +7,8 @@
     padding-right: 3rem;
     padding-left: 5rem;
     padding-bottom: 15rem;
+    background: linear-gradient(rgb(38, 38, 48) 55%, transparent 40%) no-repeat;
+    
 }
 
 .contact-text{
@@ -18,11 +20,11 @@
 
 .contact-text h4{
     font-size: 60px;
-    color: rgb(12, 66, 12);
+    color: white;
 }
-
 .contact-text p{
     font-size: 20px;
+    color: white;
 }
 
 .contact-img img{
@@ -39,7 +41,7 @@
     position: absolute;
     top: 500px;
     right: 450px;
-    box-shadow: 10px 10px 5px lightblue inset;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     /* border: 5px solid black; */
 }
 
@@ -51,6 +53,6 @@
     position: absolute;
     top: 500px;
     left: 200px;
-    box-shadow: 10px 10px 5px lightblue inset;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     /* border: 5px solid black; */
 }

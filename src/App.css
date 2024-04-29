@@ -20,8 +20,13 @@ Sidebar CSS
     position: absolute;
     height: 100%;
     width: 250px;
+    right: -250px;
+    background-color: black;
+    transition: .4s;
+}
+
+.Sidebar-active{
     right: 0;
-    background-color: #303030;
 }
 
 .SidebarList {
@@ -60,4 +65,18 @@ Sidebar CSS
         flex: 70%;
         display: grid;
         place-items: center;
+    }
+
+    .Sidebar .toggle-btn{
+        position: absolute;
+        top: 30px;
+        right: 330px;
+    }
+
+    .toggle-btn span{
+        width: 45px;
+        height: 4px;
+        background: white;
+        display: block;
+        margin-top: 4px;
     }

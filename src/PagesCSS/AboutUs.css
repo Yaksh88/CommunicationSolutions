@@ -3,6 +3,7 @@
     background-color: #0b0a17;
     color: white;
     display: flex;
+    height: 75px;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
@@ -12,6 +13,7 @@
 
 .title {
     font-size: 30px;
+    padding-left: 2rem;
 }
 
 .sample{
@@ -28,64 +30,135 @@
 }
 
 /*For HeroSection*/
-.Homes {
-    height: 300px;
-    /* background-image: url(../assets/hero.jpeg);
+.hero_section_ab {
+    height: 700px;
+    background-image: url(../assets/hero_ab.jpg);
     background-size: cover;
-    filter: grayscale(100%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* font-size: xx-large; */
 }
 
 .container {
-    background-color: black;
     display: inline-block;
-    color: white;
     padding: 1rem;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 200px;
+    top: 100px;
 }
 
-.text{
-    font-size: 2em;
-    letter-spacing: 10px;
-    font-family: monospace;
-    border-right: 5px solid;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation:
-        typing 3s steps(25) infinite ,
-        cursor .4s step-end infinite alternate;
+.text {
+    font-size: 50px;
 }
 
-@keyframes cursor {
-    50% { border-color: transparent }
-}
-
-@keyframes typing {
-    from { width: 0 }
-}
 
 .containersz{
-    background-color: #0b0a17;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
     padding: 3rem;
+    padding-bottom: 15rem;
 }
 
 
 .title-text{
+    position: absolute;
+    background-color: #0b0a17;
+    padding-left: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 10rem;
     font-size: x-large;
     display: flex;
+    gap: 30rem;
     justify-content: space-between;
     align-items: center;
-    gap: 18rem;
-    padding-left: 25rem;
+}
+
+.serv_title{
+    font-size: 40px;
+    padding-left: 190px;
+    padding-top: 50px;
+}
+
+.wrapper {
+    padding: 10px 10%;
+}
+
+#serv_cards{
+    /* border: 5px solid red; */
+    pad: 50px 0;
+    padding-bottom: 100px;
+}
+
+.box-area{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-left: -90px;
+    margin-top: 80%;
+    font-family: bebas neue;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.overlay p{
+    color: white;
+    margin-left: -80px;
+}
+
+.boxLhover{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
 }
 
 .serv_container {

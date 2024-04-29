@@ -1,14 +1,20 @@
 import React from "react";
 import "../PagesCSS/AboutUs.css";
-import s1 from '../assets/imgplaceholder.jpg';
+// import s1 from '../assets/imgplaceholder.jpg';
 import place from '../assets/placeholder.png';
+import serv1 from '../assets/serviceone.jpg';
+import serv2 from '../assets/servicetwo.jpg';
+import serv3 from '../assets/servicethree.jpg';
 
 const ContactUs = () => {
 	return (
 		<>
-		<div className="Homes">
+		<div className="hero_section_ab">
             <div className="container">
-                <p className="text">Who Are We??</p>
+                <h4>About Us</h4>
+                <p className="text">Our Mission is to help get</p>
+                <p className="text">your name out there in</p>
+                <p className="text">the world!</p>
             </div>
         </div>
 		<div className="containersz">
@@ -19,7 +25,37 @@ const ContactUs = () => {
                 <p>Info about the client/Company</p>
             </div>
         </div>
-		<div className="serv_container">
+        <h4 className="serv_title">Here are some of the services we offer...</h4>
+        <div id="serv_cards">
+            <div className="wrapper">
+                <div className="box-area">
+                    <div className="box">
+                        <img src={serv1} alt=""/>
+                        <div className="overlay">
+                            <h3>Yelp Campaign</h3>
+                            <p>Management Of Promotional Outlets such as Yelp</p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <img src={serv2} alt=""/>
+                        <div className="overlay">
+                            <h3>Business Coaching</h3>
+                            <p>Business  Coaching That Are Geared 
+                            Towards Their Clients Best Interest</p>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <img src={serv3} alt=""/>
+                        <div className="overlay">
+                            <h3>Communication Optimization</h3>
+                            <p>Streamlines The Essential Context Needed </p>
+                            <p>For Clients To Maintain And Grow Their Business</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		{/* <div className="serv_container">
             <div className="serv_img">
                 <img src={s1} alt=""/>             
             </div>
@@ -54,7 +90,7 @@ const ContactUs = () => {
                 <p>Streamlines The Essential Context Needed </p>
                 <p>For Clients To Maintain And Grow Their Business</p>
             </div>
-        </div>
+        </div> */}
 		</>
 	);
 };
